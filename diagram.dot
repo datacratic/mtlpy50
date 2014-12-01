@@ -1,0 +1,19 @@
+digraph {
+rankdir=LR; size=11; node [shape=record fontname="Arial" color=lightgrey]; edge [ color=grey fontname="Arial"]
+data[label="Input Data | CSV"]
+adjancency[label="adjancency | 15,122 x 876,961 | sparse "]; data -> adjancency [label="import"]; 
+subreddits[label="subreddits | 15,122 x 1 | strings "]; data -> subreddits
+
+users_per_subreddit[label="users_per_subreddit | 15,122 x 1 | counts "]; adjancency->users_per_subreddit 
+{ rank=same  adjancency subreddits }
+
+embedded_coords[label="embedded_coords | 15,122 x 100 | dense "]; adjancency->embedded_coords [label="TruncatedSVD"];
+{ rank=same  users_per_subreddit embedded_coords }
+
+clusters[label="clusters | 15,122 x 1 | ints"]; embedded_coords->clusters [label="KMeans"]
+xycoords[label="xycoords | 15,122 x 2 | 2-d points"]; embedded_coords->xycoords [label="TSNE"]
+
+users_per_subreddit->size->Bokeh; xycoords->position->Bokeh
+clusters->colour->Bokeh; subreddits->hover_labels->Bokeh
+{ rank=same  size colour hover_labels position }
+}
