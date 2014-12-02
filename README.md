@@ -3,7 +3,6 @@ mtlpy50
 
 Nicolas Kruchten's presentation at Montreal Python 50
 
-Files:
   * mtlpy.ipynb is the main IPython notebook
     * index.html is the HTML export of this notebook
       * viewable at http://opensource.datacratic.com/mtlpy50
