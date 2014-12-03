@@ -1,13 +1,13 @@
 digraph {
 rankdir=LR; size=11; node [shape=record fontname="Arial" color=lightgrey]; edge [ color=grey fontname="Arial"]
 data[label="Input Data | CSV"]
-adjancency[label="adjancency | 15,122 x 876,961 | sparse "]; data -> adjancency [label="import"]; 
+adjacency[label="adjacency | 15,122 x 876,961 | sparse "]; data -> adjacency [label="import"]; 
 subreddits[label="subreddits | 15,122 x 1 | strings "]; data -> subreddits
 
-users_per_subreddit[label="users_per_subreddit | 15,122 x 1 | counts "]; adjancency->users_per_subreddit 
-{ rank=same  adjancency subreddits }
+users_per_subreddit[label="users_per_subreddit | 15,122 x 1 | counts "]; adjacency->users_per_subreddit 
+{ rank=same  adjacency subreddits }
 
-embedded_coords[label="embedded_coords | 15,122 x 100 | dense "]; adjancency->embedded_coords [label="TruncatedSVD"];
+embedded_coords[label="embedded_coords | 15,122 x 100 | dense "]; adjacency->embedded_coords [label="TruncatedSVD"];
 { rank=same  users_per_subreddit embedded_coords }
 
 clusters[label="clusters | 15,122 x 1 | ints"]; embedded_coords->clusters [label="KMeans"]

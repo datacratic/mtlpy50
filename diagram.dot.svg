@@ -16,17 +16,17 @@
 <polyline fill="none" stroke="lightgrey" points="0.5,-87 81.5,-87 "/>
 <text text-anchor="middle" x="41" y="-70.4" font-family="Arial" font-size="14.00">CSV</text>
 </g>
-<!-- adjancency -->
-<g id="node2" class="node"><title>adjancency</title>
+<!-- adjacency -->
+<g id="node2" class="node"><title>adjacency</title>
 <polygon fill="none" stroke="lightgrey" points="158.5,-109 158.5,-181 287.5,-181 287.5,-109 158.5,-109"/>
-<text text-anchor="middle" x="223" y="-164.4" font-family="Arial" font-size="14.00">adjancency</text>
+<text text-anchor="middle" x="223" y="-164.4" font-family="Arial" font-size="14.00">adjacency</text>
 <polyline fill="none" stroke="lightgrey" points="158.5,-157 287.5,-157 "/>
 <text text-anchor="middle" x="223" y="-140.4" font-family="Arial" font-size="14.00">15,122 x 876,961</text>
 <polyline fill="none" stroke="lightgrey" points="158.5,-133 287.5,-133 "/>
 <text text-anchor="middle" x="223" y="-116.4" font-family="Arial" font-size="14.00">sparse</text>
 </g>
-<!-- data&#45;&gt;adjancency -->
-<g id="edge2" class="edge"><title>data&#45;&gt;adjancency</title>
+<!-- data&#45;&gt;adjacency -->
+<g id="edge2" class="edge"><title>data&#45;&gt;adjacency</title>
 <path fill="none" stroke="grey" d="M81.8444,-100.016C101.561,-106.3 125.845,-114.039 148.679,-121.315"/>
 <polygon fill="grey" stroke="grey" points="147.768,-124.698 158.358,-124.4 149.893,-118.029 147.768,-124.698"/>
 <text text-anchor="middle" x="120" y="-120.4" font-family="Arial" font-size="14.00">import</text>
@@ -54,8 +54,8 @@
 <polyline fill="none" stroke="lightgrey" points="418.5,-228 567.5,-228 "/>
 <text text-anchor="middle" x="493" y="-211.4" font-family="Arial" font-size="14.00">counts</text>
 </g>
-<!-- adjancency&#45;&gt;users_per_subreddit -->
-<g id="edge6" class="edge"><title>adjancency&#45;&gt;users_per_subreddit</title>
+<!-- adjacency&#45;&gt;users_per_subreddit -->
+<g id="edge6" class="edge"><title>adjacency&#45;&gt;users_per_subreddit</title>
 <path fill="none" stroke="grey" d="M287.672,-167.755C323.915,-180.507 369.54,-196.561 408.573,-210.294"/>
 <polygon fill="grey" stroke="grey" points="407.75,-213.715 418.344,-213.732 410.073,-207.112 407.75,-213.715"/>
 </g>
@@ -68,8 +68,8 @@
 <polyline fill="none" stroke="lightgrey" points="423.5,-133 562.5,-133 "/>
 <text text-anchor="middle" x="493" y="-116.4" font-family="Arial" font-size="14.00">dense</text>
 </g>
-<!-- adjancency&#45;&gt;embedded_coords -->
-<g id="edge9" class="edge"><title>adjancency&#45;&gt;embedded_coords</title>
+<!-- adjacency&#45;&gt;embedded_coords -->
+<g id="edge9" class="edge"><title>adjacency&#45;&gt;embedded_coords</title>
 <path fill="none" stroke="grey" d="M287.672,-145C325.273,-145 372.974,-145 412.933,-145"/>
 <polygon fill="grey" stroke="grey" points="413.18,-148.5 423.18,-145 413.18,-141.5 413.18,-148.5"/>
 <text text-anchor="middle" x="353" y="-148.4" font-family="Arial" font-size="14.00">TruncatedSVD</text>
