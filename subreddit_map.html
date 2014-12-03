@@ -76954,14 +76954,16 @@
         </script>
     </head>
     <body>
-        <div class="plotdiv" id="a60810cd-eef4-45f1-abc8-e399541d024e" style="width: 1000px; margin: 0 auto;"></div>
+        <div class="plotdiv" id="a60810cd-eef4-45f1-abc8-e399541d024e" style="width: 910px; margin: 0 auto;"></div>
         <div style="width: 800px; margin: 0 auto;">
             <h1 align="center">Frequently Asked Questions</h1>
 
             <h2>What am I looking at?</h2>
-            <p>Each dot represents a subreddit (a subsection of the discussion website <a href="http://reddit.com/">Reddit</a>) and you can mouse over it to see its name. Dot positions were determined by the excellent <a href="http://jmlr.csail.mit.edu/papers/volume9/vandermaaten08a/vandermaaten08a.pdf">t-SNE algorithm</a>: dots are very close to each other if many users are contributors to both or if many users in each are contributors to the same other subreddits. Groups of dots are far away from each other if not many users post within both clusters or if users in the clusters don't have similar posting patterns. The size of the dots is related to the number of posts a subreddit receives and the colour of the dots was algorithmically determined by the <a href="http://en.wikipedia.org/wiki/K-means_clustering">K-Means clustering algorithm</a>.</p>
+            <p>Each dot represents a subreddit (a subsection of the discussion website <a href="http://reddit.com/">Reddit</a>) and you can mouse over it to see its name. Dot positions were determined by the excellent <a href="http://jmlr.csail.mit.edu/papers/volume9/vandermaaten08a/vandermaaten08a.pdf">t-SNE algorithm</a>: the distance between dots is non-linearly related to the similarity in posting patterns for the users who posted to the subreddits represented by those dots. The size of the dots is related to the number of posts a subreddit receives. The colour of the dots was algorithmically determined by the <a href="http://en.wikipedia.org/wiki/K-means_clustering">K-Means clustering algorithm</a>.</p>
 
-            <p>Some interesting patterns come out when you scan your cursor over dots and look at what appears near what!</p>
+            <p>Some interesting patterns come out when you scan your cursor over dots and look at what appears near what! In particular, the colours show broad patterns (i.e. light blue contains a lot of sports, dark green contains many video games) and positions will show some finer patterns (i.e. individual sports like soccer and football and individual video games form distinct clusters).</p>
+
+            <p>Some clusters show up in unintuitive locations: for example the soccer, football and hockey clusters are not near the other sports. This may be due to some unintuitive pattern in the data, or just to the way the t-SNE algorithm worked through its constraints to reduce a 100-dimensional space to 2 dimensions.</p>
 
             <p><i>Note: some subreddit names may be offensive and/or cryptic to non-users of Reddit and no effort was made to make the names 'safe for work'.</i></p>
 
